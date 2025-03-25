@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Short Stack",
+  "version": "1.0",
+  "description": "Sorts YouTube search results by duration, from shortest to longest videos.",
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": ["*://*.youtube.com/*"],
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png",
+    "256": "images/icon256.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png",
+      "256": "images/icon256.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
