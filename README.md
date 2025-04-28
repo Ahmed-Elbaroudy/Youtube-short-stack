@@ -21,4 +21,4 @@ A simple Chrome extension that sorts YouTube search results by video duration, s
 
 ## Author
 
-Created by Ahmed Elbaroudy with a lot of ai help:)
+Created by Ahmed Elbaroudy
